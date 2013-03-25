@@ -14,6 +14,7 @@ The `JavaRegex` class automatically adds those characters to every Java string t
 
 ## Example Usage
 
+    ```ruby
     > require java_regex
     => true
     > jre = JavaRegex.new('.*some_regex_\p{Digit}')
@@ -25,6 +26,7 @@ The `JavaRegex` class automatically adds those characters to every Java string t
     => /\A.*some_regex_[[:digit:]]\z/
     > 'some_regex_1'.scan(re)
     => ["some_regex_1"]
+    ```
     
 ## Supported Features
 
@@ -215,6 +217,6 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Ruby Support` No
     
-    `Result if Found` converted to `[:alpha:]` POSIX character class.
+    `Result if Found` Converted to `[:alpha:]` POSIX character class.
 
 [Regular-Expressions.info]: http://www.regular-expressions.info/refflavors.html
