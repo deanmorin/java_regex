@@ -1,13 +1,14 @@
 # encoding=utf-8
 class JavaRegex::Translator
   def self.translate(regex)
+    regex = String.new(regex)
     characters(regex)
     character_classes_or_character_sets(regex)
     word_boundaries(regex)
     modifiers(regex)
     unicode_characters!(regex)
     posix_bracket_expressions!(regex)
-    regex.sub!(/\A(.*)\z/, '/\A\1\z/')
+    regex.sub!(/\A(.*)\z/, '\A\1\z')
     return regex
   end
 
