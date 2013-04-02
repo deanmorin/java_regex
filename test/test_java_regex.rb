@@ -19,9 +19,8 @@ class JavaRegexTest < Test::Unit::TestCase
   end
 
   def test_character_classes_or_character_sets
-    assert_raise JavaRegexException::TranslationError do
-      JavaRegex.new('[\d-z]').to_ruby()
-    end
+    assert_equal '\A[\d\-z]\z', JavaRegex.new('[\d-z]').to_ruby()
+    assert_equal '\A[ad-]\z', JavaRegex.new('[ad-]').to_ruby()
     assert_equal '\A[a-z]\z', JavaRegex.new('[a-z]').to_ruby()
   end
 

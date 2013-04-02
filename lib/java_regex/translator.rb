@@ -26,10 +26,7 @@ class JavaRegex::Translator
   end
 
   def self.character_classes_or_character_sets(regex)
-    literal_hyphen = regex.scan(/\[\\.-.\]/)
-    raise JavaRegexException::TranslationError,
-      'Literal hyphens like [\d-z] are not supported' unless
-        literal_hyphen.empty?
+    regex.gsub!(/(\[\\.)-(.\])/, '\1\\-\2')
   end
 
   def self.word_boundaries(regex)

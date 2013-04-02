@@ -55,7 +55,7 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Ruby Support` No
     
-    `Result if Found` Throws an exception (looks for `[\x-y]`, where x and y can be any character. I'm not sure if this scope is too large)
+    `Result if Found` Escapes the hyphen: `[\d-z]` -> `[\d\-z]`
 
 ### Word Boundaries
 
@@ -215,7 +215,7 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Ruby Support` No
     
-    `Result if Found` converted to `[:alpha:]` POSIX character class.
+    `Result if Found` Converted to `[:alpha:]` POSIX character class.
 
 ## Copyright
 
