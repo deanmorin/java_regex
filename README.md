@@ -65,7 +65,7 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Ruby Support` Ascii only
     
-    `Result if Found` Throws an exception.
+    `Result if Found` Throws an exception if followed by a non-ascii character.
 
 *   `\B` (NOT the beginning or end of a word)
 
@@ -73,7 +73,7 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Ruby Support` Ascii only
     
-    `Result if Found` Throws an exception.
+    `Result if Found` Throws an exception if followed by a non-ascii character.
 
 ### Grouping and Backreferences
 
