@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
     'lib/java_regex/exceptions.rb'
   ]
   s.homepage    = 'http://github.com/deanmorin/java_regex'
+  s.license = 'MIT'
 end

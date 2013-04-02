@@ -217,4 +217,9 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Result if Found` converted to `[:alpha:]` POSIX character class.
 
+## Copyright
+
+Copyright (c) 2013 Dean Morin. See [LICENSE] for details.
+
 [Regular-Expressions.info]: http://www.regular-expressions.info/refflavors.html
+[LICENSE]: https://github.com/deanmorin/java_regex/blob/master/LICENSE
