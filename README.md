@@ -39,7 +39,7 @@ The regex feature differences between Java and Ruby were obtained from the compa
     
     `Result if Found` Throws an exception.
     
-*    `\cA` through `\cZ` (control character)
+*   `\cA` through `\cZ` (control character)
 
     `Java Support` Yes
     
